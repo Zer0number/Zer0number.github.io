@@ -1,0 +1,602 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+ul
+    margin: 0
+    padding: 0
+
+ul li
+    list-style: none
+
+a, a:hover, a:focus, a:visited
+    text-decoration: none
+
+.clear
+    clear: both
+ 
+.button
+    text-align: center
+    display: block
+
+.divider
+    display: block
+    background-color: $button-color
+    width: 70px
+    height: 2px
+    margin: 0 auto
+    margin-top: 16px
+
+h3
+    text-align: center
+    text-transform: uppercase
+    color: #4c4c4c
+    font-size: 30px
+    margin: 0
+
+header
+    .top-line
+        min-height: 50px
+        background-color: $main-color-1
+        .logo
+            width: 168px
+            margin-top: 5px
+            h1
+                margin: 0
+                font-size: 16px
+                color: $main-text-color
+                line-height: 17px
+                padding-top: 2.5px
+            img
+                display: block
+                float: left
+                margin-right: 8px
+        .menu
+            ul
+                margin: 0 auto
+                line-height: 48px
+                li
+                    text-transform: uppercase
+                    margin-right: 29px
+                    float: left
+                    a
+                        display: block
+                        transition: all 0.2s ease
+                        font-size: 16px
+                        color: $main-text-color
+                    a
+                        &:hover
+                            color: $main-color-2
+                            border-bottom: 2px solid $main-color-2
+        .contacts
+            float: right
+            .phone-num
+                height: 50px
+                width: 200px
+                float: left
+                img
+                    margin-top: 11px
+                    float: left
+                    margin-right: 3px
+                ul
+                    line-height: 50px
+                    font-size: 18px
+                    li
+                        float: left
+                        margin-left: 5px
+                        color: #212121
+            .button
+                transition: all 0.2s ease
+                width: 146px
+                height: 36px
+                border: 2px solid $main-color-2
+                border-radius: 4px
+                text-align: center
+                float: right
+                margin-top: 6px
+                margin-left: 4px
+                font-size: 16px
+                color: $button-color
+                line-height: 34px
+                display: block
+                &:hover
+                    background-color: $main-color-2
+                    color: $main-color-1
+                &:active
+                    background-color: #96050e
+                    border: 2px solid #96050e
+        
+    .promotion
+        height: 700px
+        width: 100%
+        background-image: url(../img/header-bg.png)
+        background-position: top center
+        background-size: cover
+        h2
+            font-size: 42px
+            text-transform: uppercase
+            color: #fff
+            margin: 0
+            margin-top: 170px
+        p
+            font-size: 30px
+            color: #fff
+            width: 550px
+        .button
+            transition: background-color 0.2s ease
+            width: 280px
+            height: 45px
+            background-color: $button-color
+            border-radius: 10px
+            margin-top: 43px
+            font-size: 17px
+            color: $main-color-1
+            line-height: 45px
+            text-transform: uppercase
+            display: block
+            &:hover
+                background-color: #fd2f3b
+            &:active
+                background-color: #96050e
+            
+.main-content-1
+    min-height: 594px
+    .topic
+        width: 100%
+        h3
+            margin-top: 35px
+        span
+            color: #6a6a6a
+            font-size: 20px
+            text-align: center
+            display: block
+    .reason
+        transition: all 0.2s ease
+        margin: 0 auto
+        width: 260px
+        margin-top: 49px
+        border: 1px solid transparent
+        padding: 5px
+        border-radius: 10px
+        &:hover
+            border: 1px solid #000
+            .button-relative
+                background-color: $button-color
+                i
+                    color: $main-color-1
+            .button
+                background-color: $button-color
+                color: $main-color-1
+        .button-relative
+            transition: background-color 0.2s ease
+            width: 123px
+            height: 123px
+            border: 3px solid $button-color
+            border-radius: 30px
+            margin: 0 auto
+            margin-top: 50px
+            transform: rotate(45deg)
+            text-align: center
+            i
+                transition: color 0.2s ease
+                font-size: 70px
+                transform: rotate(-45deg)
+                line-height: 118px
+                color: #4a4a4a
+        h4
+            text-transform: uppercase
+            font-size: 15px
+            color: #414141
+            text-align: center
+            font-weight: normal
+            margin-top: 50px
+        p
+            line-height: 18px
+            font-size: 16px
+            color: #616161
+            text-align: center
+        .button
+            transition: background-color 0.2s ease
+            width: 100%
+            height: 41px
+            border: 2px solid $button-color
+            border-radius: 3px
+            margin-top: 43px
+            transition: color 0.2s ease
+            font-size: 17px
+            color: #4a4a4a
+            text-transform: uppercase
+            line-height: 41px
+            font-weight: 500
+            &:active
+                background-color: #96050e
+                border: 2px solid #96050e
+        .f-ch
+            margin-top: 25px
+    :hover
+        background-color: #000
+
+.main-content-2
+    background-image: url(../img/main-content-2-bg.png)
+    background-position: top center
+    background-size: cover
+    min-height: 700px
+    h3
+        margin-top: 30px
+    .ipod
+        width: 559px
+        height: 395px
+        background-image: url(../img/ipod.png)
+        background-position: top center
+        background-size: cover
+        margin-top: 24px
+        margin-left: 110px
+        overflow: hidden
+        iframe
+            display: block
+            margin: 0 auto
+            width: 462px
+            height: 347px
+            margin-top: 24px
+    .review
+        margin-left: 30px
+        margin-top: 20px
+        color: #4a4a4a
+        font-size: 18px
+        .name
+            font-size: 24px
+            color: $main-color-2
+        .location
+            padding-top: 24px
+        p
+            font-size: 16px
+        .contacts
+            margin-top: 35px
+            .soc-icon
+                transition: border 0.2s ease
+                width: 39px
+                height: 39px
+                border: 2px solid #0687b2
+                float: left
+                transform: rotate(45deg)
+                border-radius: 10px
+                margin-top: 20px
+                margin-right: 10px
+                margin-left: 10px
+                text-align: center
+                a
+                    transition: color 0.2s ease
+                    line-height: 39px
+                    color: #0687b2
+                    display: block
+                    transform: rotate(-45deg)
+                &:hover
+                    border: 2px solid #41bfe6
+                    a
+                        color: #41bfe6
+                &:active
+                    border: 2px solid #004053
+                    a
+                        color: #004053
+                    
+        .button
+            transition: background-color 0.2s ease
+            text-align: center
+            width: 280px
+            height: 45px
+            line-height: 45px
+            text-transform: uppercase
+            font-size: 18px
+            background-color: $button-color
+            color: #fff
+            margin-top: 30px
+            border-radius: 5px
+            &:hover
+                background-color: #fd2f3b
+            &:active
+                background-color: #d20101
+    ul
+        margin-top: 46px
+        margin-left: 150px
+        li
+            transition: border 0.2s ease
+            display: block
+            width: 55px
+            height: 55px
+            display: block
+            float: left
+            margin-right: 48px
+            border: 2px solid #c6d3da
+            border-radius: 10px
+            transform: rotate(45deg)
+            overflow: hidden
+            img
+                transition: opacity 0.2s ease
+                transform: rotate(-45deg)
+                margin-top: -8px
+                margin-left: -8px
+                opacity: 0.5
+            &:hover
+                border: 2px solid $main-color-2
+                img
+                    opacity: 1
+                
+.main-content-3
+    h3
+        margin-top: 34px
+    .button
+        transition: background-color 0.2s ease
+        background-color: $button-color
+        color: $main-color-1
+        width: 280px
+        height: 45px
+        border-radius: 10px
+        line-height: 45px
+        text-transform: uppercase
+        font-size: 18px
+        margin: 0 auto
+        margin-top: 30px
+        margin-bottom: 60px
+        &:hover
+            background-color: #fd2f3b
+        &:active
+            background-color: #d20101
+    .work-scheme
+        position: relative
+        min-height: 436px
+        .scheme-line
+            position: absolute
+            width: 1200px
+            height: 2px
+            background-color: $main-color-2
+            margin-top: -1px
+            top: 185px
+            z-index: -1
+        .scheme-block
+            margin-top: 80px
+            min-height: 356px
+            .step
+                transition: color 0.2s ease
+                margin-top: 13px
+                margin-bottom: 10px
+                transition: color 0.2s ease
+                text-align: center
+                font-size: 17px
+                display: block
+                color: #4a4a4a
+                text-transform: uppercase
+                font-weight: bold
+            .mini-article
+                transition: color 0.2s ease
+                font-size: 13px
+                font-weight: bold
+                text-align: center
+                text-transform: uppercase
+            p
+                transition: color 0.2s ease
+                margin-top: 20px
+                text-align: center
+                font-size: 14px
+            .number-circle
+                    width: 30px
+                    height: 30px
+                    margin: 0 auto
+                    text-align: center
+                    color: $main-color-1
+                    line-height: 30px
+                    background-image: url(../img/circle-bg.png)
+                    margin-top: 20px
+                    span
+                        font-size: 18px
+            .scheme-img
+                position: relative
+                width: 102px
+                height: 70px
+                margin: 0 auto
+                .unactive
+                    transition: opacity 0.3s ease
+                    display: block
+                    margin: 0 auto
+                    opacity: 1
+                .active
+                    transition: opacity 0.3s ease
+                    position: absolute
+                    display: block
+                    top: 0
+                    left: 0
+                    opacity: 0
+            &:hover
+                .step
+                    color: #e20613
+                .mini-article
+                    color: #e20613
+                p
+                    color: #e20613
+                .unactive
+                    opacity: 0
+                .active
+                    opacity: 1
+.main-content-4
+    background-color: #000
+    background-image: url(../img/faq-bg.png)
+    min-height: 600px
+    h3
+        color: #fff
+        margin-top: 54px
+    .accordeon
+        margin-top: 87px
+        box-sizing: border-box
+        width: 100%
+        font-family: helvetica, sans-serif
+        .accordeon-title
+            transition: all 0.2s ease
+            text-transform: none
+            height: 43px
+            background-color: #fff
+            padding: 7px
+            cursor: pointer
+            border: 1px solid #a7a7a7
+            margin-top: 10px
+            text-align: left
+            font-size: 20px
+            color: #4a4a4a
+            font-weight: normal
+            .num-square
+                float: left
+                width: 24px
+                height: 24px
+                border: 2px solid #e3121e
+                transform: rotate(45deg)
+                text-align: center
+                line-height: 21px
+                border-radius: 4px
+                margin-top: 2px
+                margin-left: 8px
+                margin-right: 16px
+                .number
+                    transform: rotate(-45deg)
+                    float: none
+                    font-size: 18px
+                    font-weight: bold
+            span
+                transition: transform 0.2s ease
+                float: right
+                display: block
+            &:hover
+                background-color: $button-color
+                border: 1px solid $button-color
+                color: #fff
+                .num-square
+                    border: 2px solid #fff
+        .is-opened
+            background-color: $button-color
+            border: 1px solid $button-color
+            color: #fff
+            .num-square
+                border: 2px solid #fff
+            span
+                transform: rotate(180deg)
+        .accordeon-content
+            display: none
+            padding: 10px
+            background-color: #fff
+            border: 1px solid #dcdcdc
+        
+.main-content-5
+    .topic
+        width: 100%
+        span
+            color: #6a6a6a
+            font-size: 20px
+            text-align: center
+            display: block
+        h3
+            margin-top: 60px
+    .table
+        box-sizing: border-box
+        margin-top: 47px
+        .item
+            float: left
+            line-height: 50px
+            font-size: 16px
+            text-align: center
+            &:first-child
+                text-align: left
+            ul
+                li
+                    height: 50px
+                    border-bottom: 1px solid #dcdcdc
+                    &:first-child
+                        height: 65px
+                        line-height: 65px
+            .get-service
+                text-align: center
+                font-weight: bold
+                line-height: normal
+                p
+                    font-size: 17px
+                span
+                    display: block
+                .standart-price
+                    text-decoration: line-through
+                    color: #858585
+                    font-size: 14px
+                    font-weight: normal
+                .todays-price
+                    font-size: 22px
+                    margin-top: 10px
+                .button
+                    width: 170px
+                    height: 38px
+                    background-color: $button-color
+                    margin: 0 auto
+                    line-height: 38px
+                    color: $main-color-1
+                    text-transform: uppercase
+                    font-weight: normal
+                    border-radius: 4px
+                    margin-top: 10px
+                    margin-bottom: 28px
+                    &:hover
+                        background-color: #fd2f3b
+                    &:active
+                        background-color: #d20101
+
+        .name
+            width: 34%
+            margin-top: 1px
+        .basic
+            transition: border 0.2s ease
+            width: 22%
+            border: 1px solid #dcdcdc
+            border-radius: 10px 0 0 10px
+            &:hover
+                border: 1px solid #ff0000
+        .advanced
+            transition: border 0.2s ease
+            width: 22%
+            border: 1px solid #dcdcdc
+            &:hover
+                border: 1px solid #ff0000
+        .vip
+            transition: border 0.2s ease
+            width: 22%
+            border: 1px solid #dcdcdc
+            border-radius: 0 10px 10px 0
+            &:hover
+                border: 1px solid #ff0000
+            
+footer
+    margin-top: 51px
+    min-height: 499px
+    background-image: url(../img/footer-bg.png)
+    background-position: top center
+    .footer-wrapp
+        margin-right: 50px
+        margin-top: 100px
+        float: right
+        h2
+            font-size: 42px
+            font-weight: bold
+            color: #fff
+            margin: 0
+            padding: 0
+            text-transform: uppercase
+        .button
+            transition: background-color 0.2s ease
+            width: 280px
+            height: 45px
+            line-height: 45px
+            font-size: 18px
+            background-color: $button-color
+            color: $main-color-1
+            border-radius: 10px
+            margin: 0 auto
+            margin-top: 50px
+            text-transform: uppercase
+            &:hover
+                background-color: #fd2f3b
+            &:active
+                background-color: #d20101
+        
+@import "media" // Всегда в конце
